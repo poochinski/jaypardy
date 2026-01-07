@@ -5,6 +5,13 @@ const { Server } = require("socket.io");
 
 const app = express();
 app.use(cors());
+app.get("/", (req, res) => {
+  res.status(200).send("Jaypardy backend is running ✅");
+});
+
+app.get("/healthz", (req, res) => {
+  res.status(200).json({ ok: true });
+});
 
 /* ✅ ADD THESE LINES RIGHT HERE */
 app.get("/", (req, res) => {
