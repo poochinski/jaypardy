@@ -6,11 +6,23 @@ const { Server } = require("socket.io");
 const app = express();
 app.use(cors());
 
+/* ✅ ADD THESE LINES RIGHT HERE */
+app.get("/", (req, res) => {
+  res.status(200).send("Jaypardy backend is running ✅");
+});
+
+app.get("/healthz", (req, res) => {
+  res.status(200).json({ ok: true });
+});
+/* ✅ END ADD */
+
 const server = http.createServer(app);
 const io = new Server(server, { cors: { origin: "*" } });
 
 /**
  * ===== Jaypardy V1.2 Server (Playable Round 1) =====
+ * ...
+ */
  * - Single `state` object
  * - Server is source of truth
  * - Clients render state
