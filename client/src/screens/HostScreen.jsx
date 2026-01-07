@@ -24,7 +24,7 @@ export default function HostScreen({ state }) {
   const canStart = state?.phase === "lobby" || state?.phase === "board";
 
   return (
-    <div className="jp-root">
+    <div className="jp-host">
       <header className="jp-topbar">
         <div className="jp-title">JAYPARDY — HOST</div>
         <div className="jp-chip">
