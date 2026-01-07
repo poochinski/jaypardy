@@ -1,4 +1,9 @@
 /* Host Theme — visual-only polish (no logic) */
+
+body {
+  background: red !important;
+}
+
 :root {
   --jp-bg: #050a2a;
   --jp-panel: rgba(10, 18, 72, 0.92);
