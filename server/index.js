@@ -91,6 +91,17 @@ const ROUND1_BANK = [
       { q: "The Sun is a…", a: "What is a star?" },
     ],
   },
+    {
+    category: "TikTok Gen Pop",
+    clues: [
+      { q: "The main page where TikTok shows recommended videos.", a: "What is the For You Page (FYP)?" },
+      { q: "The TikTok feature used to respond side-by-side to another video.", a: "What is a Duet?" },
+      { q: "The TikTok feature used to add your video after a clip.", a: "What is Stitch?" },
+      { q: "The heart icon means you did this.", a: "What is like?" },
+      { q: "A short repeating internet joke format.", a: "What is a meme?" },
+    ],
+  },
+
 ];
 
 function pickRandom(arr, n) {
